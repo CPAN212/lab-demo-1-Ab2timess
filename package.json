@@ -1,0 +1,15 @@
+{
+  "name": "lab-demo-1-ab2timess",
+  "version": "1.0.0",
+  "description": "1. **Initialize the project**",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./src/lab.js",
+    "test": "jest"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^30.1.3"
+  }
+}

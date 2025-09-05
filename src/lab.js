@@ -3,6 +3,7 @@
 // Input: [1, 2, 3, 4]
 // Output: [4, 3, 2, 1]
 function reverseArray(arr) {
+  return [...arr].reverse();
   // Write you solution here
 }
 
@@ -11,6 +12,7 @@ function reverseArray(arr) {
 // Input: [1, 2, 2, 3, 4, 4, 5]
 // Output: [1, 2, 3, 4, 5]
 function removeDuplicates(arr) {
+  return arr.filter((number,index) => arr.indexOf(number) == index)
   // Write you solution here
 }
 
@@ -19,6 +21,7 @@ function removeDuplicates(arr) {
 // Input: [5, 2, 9, 1, 5, 6]
 // Output: [1, 2, 5, 5, 6, 9]
 function sortArray(arr) {
+  return arr.sort((a,b) => (a-b))
   // Write you solution here
 }
 
@@ -29,9 +32,11 @@ function syncGreet(name) {
 }
 
 function asyncGreet(name) {
+  return new Promise((resolve) => {
+    resolve(`Hello, ${name}!`)
+  })
   // Write you solution here
 }
-
 module.exports = {
   reverseArray,
   removeDuplicates,
